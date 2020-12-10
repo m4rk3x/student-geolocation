@@ -8,19 +8,12 @@ import java.util.Date;
 
 @MappedSuperclass
 public class AbstractEntity {
-    @Schema(description = "Unique identifier for the domain entities",
-            example = "1", required = true)
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    @Schema(description = "Date when the record is created.",
-            example = "2020-11-29", required = true)
-    @JsonFormat(pattern = "yyyy-mm-dd")
-    @Column(updatable = false)
+
     private Date created_At;
-    @Schema(description = "Date when the record is update.",
-            example = "2020-11-29", required = true)
-    @JsonFormat(pattern = "yyyy-mm-dd")
+
     private Date updated_At;
 
     public Long getId() {

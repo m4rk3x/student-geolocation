@@ -8,11 +8,13 @@ public class ClassRoom {
     private String name;
     private double latitude;
     private double longitude;
+    private double length;
 
-    public ClassRoom(String name, double latitude, double longitude) {
+    public ClassRoom(String name, double latitude, double longitude, double length) {
         this.name = name;
         this.latitude = latitude;
         this.longitude = longitude;
+        this.length = length;
     }
 
     public String getName() {
@@ -39,12 +41,21 @@ public class ClassRoom {
         this.longitude = longitude;
     }
 
+    public double getLength() {
+        return length;
+    }
+
+    public void setLength(double length) {
+        this.length = length;
+    }
+
     @Override
     public String toString() {
         return "ClassRoom{" +
                 "name='" + name + '\'' +
                 ", latitude=" + latitude +
                 ", longitude=" + longitude +
+                ", length=" + length +
                 '}';
     }
 }

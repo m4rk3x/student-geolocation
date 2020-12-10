@@ -34,11 +34,11 @@ public class GeolocationUnitedTest {
         List<Student> studentFoundList = new ArrayList<>();
         List<ClassRoom> classRoomList = new ArrayList<>();
         List<Student> actualList = new ArrayList<>();
-        ClassRoom engineering_classroom = new ClassRoom("Principles of computational geo-location analysis", 34.069140, -118.442689);
-        ClassRoom geology_classroom = new ClassRoom("Sedimentary Petrology", 34.069585, -118.441878);
-        ClassRoom psychology_classroom = new ClassRoom("Introductory Psychobiology", 34.069742, -118.441312);
-        ClassRoom music_classroom = new ClassRoom("Art of Listening", 34.070223, -118.440193);
-        ClassRoom humanities_classroom = new ClassRoom("Art History", 34.071528, -118.441211);
+        ClassRoom engineering_classroom = new ClassRoom("Principles of computational geo-location analysis", 34.069140, -118.442689, 20.0);
+        ClassRoom geology_classroom = new ClassRoom("Sedimentary Petrology", 34.069585, -118.441878, 20.0);
+        ClassRoom psychology_classroom = new ClassRoom("Introductory Psychobiology", 34.069742, -118.441312, 20.0);
+        ClassRoom music_classroom = new ClassRoom("Art of Listening", 34.070223, -118.440193, 20.0);
+        ClassRoom humanities_classroom = new ClassRoom("Art History", 34.071528, -118.441211, 20.0);
         classRoomList.add(engineering_classroom);
         classRoomList.add(geology_classroom);
         classRoomList.add(psychology_classroom);
@@ -71,11 +71,11 @@ public class GeolocationUnitedTest {
         List<ClassRoom> classRoomList = new ArrayList<>();
         List<Student> actualList = new ArrayList<>();
 
-        ClassRoom engineering_classroom = new ClassRoom("Principles of computational geo-location analysis", 34.069140, -118.442689);
-        ClassRoom geology_classroom = new ClassRoom("Sedimentary Petrology", 34.069585, -118.441878);
-        ClassRoom psychology_classroom = new ClassRoom("Introductory Psychobiology", 34.069742, -118.441312);
-        ClassRoom music_classroom = new ClassRoom("Art of Listening", 34.070223, -118.440193);
-        ClassRoom humanities_classroom = new ClassRoom("Art History", 34.071528, -118.441211);
+        ClassRoom engineering_classroom = new ClassRoom("Principles of computational geo-location analysis", 34.069140, -118.442689, 20.0);
+        ClassRoom geology_classroom = new ClassRoom("Sedimentary Petrology", 34.069585, -118.441878, 20.0);
+        ClassRoom psychology_classroom = new ClassRoom("Introductory Psychobiology", 34.069742, -118.441312, 20.0);
+        ClassRoom music_classroom = new ClassRoom("Art of Listening", 34.070223, -118.440193, 20.0);
+        ClassRoom humanities_classroom = new ClassRoom("Art History", 34.071528, -118.441211, 20.0);
         classRoomList.add(engineering_classroom);
         classRoomList.add(geology_classroom);
         classRoomList.add(psychology_classroom);
